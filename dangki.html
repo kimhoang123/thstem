@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+.sk{
+    position: sticky;
+    top: 0;
+}
+.nav{
+    background: rgb(29, 29, 31);
+    display:flex ;
+    
+}
+.pt{
+    background: black;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.pt h1{
+    color: rgb(136, 148, 158);
+    padding: 8px 15px;
+}
+.pt input{
+    display: flex;
+    float: right;
+    padding: 6px;
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 17px;
+}
+.navbar-item{
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+    display:inline-block;
+    text-transform: uppercase;
+    
+}
+.nav a:hover{
+    background: rgb(99, 102, 109);
+    color: rgb(29, 29, 31);}
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .form{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px;
+        border-radius: 8px;
+        box-shadow: 5px 10px 16px  rgba(0,0,0,0.2);
+    }
+    .form_title{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .form_label{
+        font-weight: bold;
+        display: block;
+    }
+    .form_input{
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid cornflowerblue;
+    }
+    .form_submit{
+        background-color: cornflowerblue;
+        color: #fff;
+        padding: 6px;
+        width: 100%;
+        border: 0;
+    }
+    .form_href{
+        text-decoration: none;
+        color: black;
+    }
+    .footer{
+    background-color: rgb(29, 29, 31);
+    font-size: 18px;
+    text-align: center;
+    margin-top:  56px;
+    padding: 13px ;
+}
+.ft{
+    color:white;
+    padding: 12px 20px;
+}
+#face {
+    color: rgb(194, 199, 209);
+    padding: 20px 15px;
+}
+    
+    </style>
+<body>
+    <div class="sk">
+        <div class="pt">
+           <h1>Phim GĐ</h1>
+           <input type="text" placeholder="Tìm kiếm...">
+        </div>
+        <div class="nav">
+           <a href="index.html" class="navbar-item">Trang chủ</a>
+           <a href="dangnhap.html" class="navbar-item">Đăng nhập</a>
+        </div> 
+    </div>
+    <div class="container">
+        <form class="form" action="">
+           <h3 class="form_title">Đăng kí</h3>
+           <div>
+            <label class="form_label" for="emailInput">Họ & tên</label> 
+            <input
+            class="form_input"
+            type="text"
+            id="nameInput" placeholder="Tên của bạn"
+            />
+        </div>
+        <div>
+            <label class="form_label" for="emailInput">Email</label> 
+            <input
+            class="form_input"
+            type="email"
+            id="emailInput" placeholder="Email của bạn"
+            />
+        </div>
+        <div>
+            <label class="form_label" for="passwordInput">Password</label> 
+            <input
+            class="form_input"
+            type="password" 
+            id="passwordInput"
+            placeholder="Mật khẩu của bạn" >
+        </div>
+        <div>
+            <label class="form_label" for="passwordInput">Nhập lại Password</label> 
+            <input
+            class="form_input"
+            type="password" 
+            id="passwordInput"
+            placeholder="Nhập lại mật khẩu của bạn" >
+        </div>
+        <input type="submit" class="form_submit" value="Đăng kí">
+        <a href="dangnhap.html" class="form_href">(*) Bạn đã có tài khoản</a>
+        </form>
+    </div>
+    <div class="footer">
+        <h2 class="ft">Phim GĐ</h2>
+        <p class="ft">Trang Review các bộ phim hay, đa dạng về thể loại. Dành cho mọi đối tượng đặc biệt là dành cho gia đình.</p>
+        <i class="fa fa-facebook" id="face"></i>
+        <i class="fa fa-instagram" id="face"></i>
+        <i class="fa fa-envelope" id="face"></i>
+     </div>
+</body>
+</html>
